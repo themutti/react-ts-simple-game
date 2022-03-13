@@ -1,3 +1,31 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
+  height: 100vh;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  width: min-content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2vmin;
+}
+
+.game-btn {
+  width: 30vmin;
+  height: 30vmin;
+  filter: brightness(0.7);
+}
+.game-btn.active, .game-btn:active {
+  filter: brightness(1);
+}
+
+.start-btn {
+
 }

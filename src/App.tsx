@@ -1,6 +1,10 @@
-export default function App() {
+import React from "react";
+import Game from "./components/Game";
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-    </div>
+    <Game />
   );
 }
+
+export default App;
