@@ -11,21 +11,25 @@ body {
 }
 
 .game {
+
+}
+
+.start-btn {
+
+}
+
+.btns-wrapper {
   width: min-content;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2vmin;
 }
 
-.game-btn {
+.game-btn, .game-btn:disabled {
   width: 30vmin;
   height: 30vmin;
   filter: brightness(0.7);
 }
 .game-btn.active, .game-btn:active {
   filter: brightness(1);
-}
-
-.start-btn {
-
 }
