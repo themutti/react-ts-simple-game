@@ -3,19 +3,31 @@
 }
 
 body {
-  height: 100vh;
   margin: 0;
+}
+
+.game {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.game {
-
+.start-btn {
+  position: absolute;
+  width: 20vmin;
+  height: 20vmin;
+  font-size: 5vmin;
+  font-weight: bold;
+  background-color: yellow;
+  border: 3px black solid;
+  border-radius: 50%;
+  transition: filter 100ms;
+  z-index: 1;
 }
 
-.start-btn {
-
+.start-btn:active {
+  filter: brightness(0.85);
 }
 
 .btns-wrapper {
@@ -28,8 +40,21 @@ body {
 .game-btn, .game-btn:disabled {
   width: 30vmin;
   height: 30vmin;
-  filter: brightness(0.7);
+  border: 3px black solid;
+  border-radius: 10%;
+  transition: filter 400ms;
+  filter: brightness(0.6);
+  cursor: pointer;
 }
+
+.game-btn:disabled {
+  cursor: auto;
+}
+
 .game-btn.active, .game-btn:active {
   filter: brightness(1);
+}
+
+.game-btn:active {
+  transition: 100ms;
 }
