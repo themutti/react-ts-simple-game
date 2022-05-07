@@ -33,7 +33,7 @@ const Game: React.FC = () => {
       } else {
         setDoGap(true);
       }
-    }, 500);
+    }, 200);
   }, [btnsSequence, currBtnIndex, doGap]);
 
   const extractRndBtn = (): void => {
@@ -54,7 +54,7 @@ const Game: React.FC = () => {
     if (playerIndex >= btnsSequence.length) {
       setTimeout(() => {
         extractRndBtn();
-      }, 500);
+      }, 300);
     }
   };
 

@@ -42,7 +42,7 @@ body {
   height: 30vmin;
   border: 3px black solid;
   border-radius: 10%;
-  transition: filter 400ms;
+  transition: filter 250ms;
   filter: brightness(0.6);
   cursor: pointer;
 }
